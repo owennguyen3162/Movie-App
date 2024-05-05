@@ -26,5 +26,10 @@ class MainViewController: UIViewController {
         self.view.backgroundColor = .red
         setupTableView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.getData()
+    }
 
 }
