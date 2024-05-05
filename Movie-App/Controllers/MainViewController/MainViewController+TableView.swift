@@ -31,8 +31,18 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "\(indexPath.row)"
+        cell.textLabel?.text = getMoviesTitle(cellDataSource[indexPath.row])
         return cell
+    }
+    
+    func reloadTableView () {
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
+    func getMoviesTitle(_ movie: Movie) -> String {
+        return movie.title ?? movie.name ?? ""
     }
     
     

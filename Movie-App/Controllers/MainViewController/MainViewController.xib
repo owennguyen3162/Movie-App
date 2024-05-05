@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Movie_App" customModuleProvider="target">
             <connections>
+                <outlet property="loadingView" destination="sqp-rf-h3L" id="Tw9-E8-qra"/>
                 <outlet property="tableView" destination="RkW-oL-sX9" id="6qY-Ut-CP9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,6 +24,9 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="sqp-rf-h3L">
+                    <rect key="frame" x="186.66666666666666" y="428.66666666666669" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -30,7 +34,11 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RkW-oL-sX9" secondAttribute="bottom" id="18p-en-zEt"/>
                 <constraint firstItem="RkW-oL-sX9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5Tp-dS-wbf"/>
                 <constraint firstItem="RkW-oL-sX9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Cjw-SL-0Iv"/>
+                <constraint firstItem="sqp-rf-h3L" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="OiF-5I-cRO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RkW-oL-sX9" secondAttribute="trailing" id="dWY-NG-EGU"/>
+                <constraint firstItem="sqp-rf-h3L" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0234742" id="kak-Zv-MZI"/>
+                <constraint firstItem="sqp-rf-h3L" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.0508906" id="mPe-QZ-0L7"/>
+                <constraint firstItem="sqp-rf-h3L" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="rpa-FP-Ffo"/>
             </constraints>
             <point key="canvasLocation" x="33" y="-11"/>
         </view>

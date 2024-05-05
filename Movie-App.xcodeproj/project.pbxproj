@@ -17,6 +17,7 @@
 		46915A1C2BE7DE5400396AC5 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46915A1B2BE7DE5400396AC5 /* NetworkConstant.swift */; };
 		46915A1E2BE7DF1900396AC5 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46915A1D2BE7DF1900396AC5 /* APICaller.swift */; };
 		46915A202BE7DF6A00396AC5 /* TrendingMoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46915A1F2BE7DF6A00396AC5 /* TrendingMoviesModel.swift */; };
+		46915A222BE7EBA800396AC5 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46915A212BE7EBA800396AC5 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		46915A1B2BE7DE5400396AC5 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		46915A1D2BE7DF1900396AC5 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		46915A1F2BE7DF6A00396AC5 /* TrendingMoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMoviesModel.swift; sourceTree = "<group>"; };
+		46915A212BE7EBA800396AC5 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		46915A122BE7D5CD00396AC5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				46915A212BE7EBA800396AC5 /* Observable.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46915A222BE7EBA800396AC5 /* Observable.swift in Sources */,
 				469159F72BE7D1B400396AC5 /* AppDelegate.swift in Sources */,
 				46915A1E2BE7DF1900396AC5 /* APICaller.swift in Sources */,
 				46915A182BE7DB6900396AC5 /* MainViewController+TableView.swift in Sources */,
