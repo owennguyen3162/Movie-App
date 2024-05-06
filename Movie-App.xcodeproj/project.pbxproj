@@ -24,6 +24,9 @@
 		46915A2B2BE9365E00396AC5 /* MovieTableCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46915A2A2BE9365E00396AC5 /* MovieTableCellViewModel.swift */; };
 		46915A2E2BE9383900396AC5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 46915A2D2BE9383900396AC5 /* SDWebImage */; };
 		46915A302BE9383900396AC5 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 46915A2F2BE9383900396AC5 /* SDWebImageMapKit */; };
+		46915A342BE93DFC00396AC5 /* DetailMoviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46915A332BE93DFC00396AC5 /* DetailMoviewViewController.xib */; };
+		46915A352BE93DFC00396AC5 /* DetailMoviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46915A322BE93DFC00396AC5 /* DetailMoviewViewController.swift */; };
+		46915A372BE9417900396AC5 /* DetailsMovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46915A362BE9417900396AC5 /* DetailsMovieViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		46915A252BE931BD00396AC5 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		46915A282BE9353500396AC5 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		46915A2A2BE9365E00396AC5 /* MovieTableCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableCellViewModel.swift; sourceTree = "<group>"; };
+		46915A322BE93DFC00396AC5 /* DetailMoviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMoviewViewController.swift; sourceTree = "<group>"; };
+		46915A332BE93DFC00396AC5 /* DetailMoviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailMoviewViewController.xib; sourceTree = "<group>"; };
+		46915A362BE9417900396AC5 /* DetailsMovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,7 @@
 			children = (
 				46915A192BE7DC3400396AC5 /* MainViewModel.swift */,
 				46915A2A2BE9365E00396AC5 /* MovieTableCellViewModel.swift */,
+				46915A362BE9417900396AC5 /* DetailsMovieViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -155,6 +162,7 @@
 		46915A152BE7D5E100396AC5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				46915A312BE93DD600396AC5 /* DetailMoviewViewController */,
 				46915A0A2BE7D26200396AC5 /* MainViewController */,
 			);
 			path = Controllers;
@@ -176,6 +184,15 @@
 				46915A252BE931BD00396AC5 /* MainTableViewCell.xib */,
 			);
 			path = MainMovieCell;
+			sourceTree = "<group>";
+		};
+		46915A312BE93DD600396AC5 /* DetailMoviewViewController */ = {
+			isa = PBXGroup;
+			children = (
+				46915A322BE93DFC00396AC5 /* DetailMoviewViewController.swift */,
+				46915A332BE93DFC00396AC5 /* DetailMoviewViewController.xib */,
+			);
+			path = DetailMoviewViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46915A002BE7D1B500396AC5 /* Assets.xcassets in Resources */,
+				46915A342BE93DFC00396AC5 /* DetailMoviewViewController.xib in Resources */,
 				46915A0D2BE7D28B00396AC5 /* MainViewController.xib in Resources */,
 				46915A262BE931BD00396AC5 /* MainTableViewCell.xib in Resources */,
 				46915A032BE7D1B500396AC5 /* Base in Resources */,
@@ -265,7 +283,9 @@
 				46915A0E2BE7D28B00396AC5 /* MainViewController.swift in Sources */,
 				46915A1C2BE7DE5400396AC5 /* NetworkConstant.swift in Sources */,
 				46915A2B2BE9365E00396AC5 /* MovieTableCellViewModel.swift in Sources */,
+				46915A352BE93DFC00396AC5 /* DetailMoviewViewController.swift in Sources */,
 				46915A1A2BE7DC3400396AC5 /* MainViewModel.swift in Sources */,
+				46915A372BE9417900396AC5 /* DetailsMovieViewModel.swift in Sources */,
 				46915A292BE9353500396AC5 /* UIView+Extension.swift in Sources */,
 				46915A202BE7DF6A00396AC5 /* TrendingMoviesModel.swift in Sources */,
 			);
