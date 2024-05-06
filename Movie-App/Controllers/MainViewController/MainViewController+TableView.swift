@@ -14,11 +14,13 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.backgroundColor = .clear
+        self.tableView.separatorStyle = .none
         registerCell()
     }
     
     func registerCell() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(MainTableViewCell.register(), forCellReuseIdentifier: MainTableViewCell.identifier)
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,8 +32,11 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = getMoviesTitle(cellDataSource[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifier, for: indexPath) as! MainTableViewCell
+            
+        let cellViewModel = cellDataSource[indexPath.row]
+        cell.selectionStyle = .none
+        cell.setupCell(viewModel: cellViewModel)
         return cell
     }
     
@@ -43,6 +48,10 @@ extension MainViewController: UITableViewDataSource, UITableViewDelegate {
     
     func getMoviesTitle(_ movie: Movie) -> String {
         return movie.title ?? movie.name ?? ""
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        150
     }
     
     
